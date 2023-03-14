@@ -9,10 +9,12 @@ import { Story } from '../story';
 
 export class SceneComponent implements OnInit {
 
-  @Input() storyList: Story = {text:''};
+  @Input() public story: Story[];
   sentenceStyle = "sentence";
 
-  constructor() { }
+  constructor() { 
+    this.story = [];
+  }
 
   ngOnInit(): void {
   }

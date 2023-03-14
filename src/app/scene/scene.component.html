@@ -1,1 +1,1 @@
-<p [class]="sentenceStyle">{{storyList.text}}</p>
+<p *ngFor="let sentence of story" [class]="sentenceStyle">{{sentence.text}}</p>

@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Story } from '../story';
 
-// export interface Story {
-//   text: string;
-// }
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,7 +9,7 @@ import { Story } from '../story';
 
 export class HomeComponent implements OnInit {
 
-  stories: Story[] =  [
+  public story: Story[] =  [
     {text: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"},
     {text: "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes"},
     {text: "L'heroi va decidir travessar la porta que el portava a casa"},
