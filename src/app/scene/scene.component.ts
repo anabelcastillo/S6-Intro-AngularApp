@@ -10,6 +10,7 @@ import { Story } from '../story';
 export class SceneComponent implements OnInit {
 
   @Input() storyList: Story = {text:''};
+  sentenceStyle = "sentence";
 
   constructor() { }
 
