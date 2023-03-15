@@ -16,6 +16,22 @@ export class SceneComponent implements OnInit {
     this.story = [];
   }
 
+  public currentSentence: number = 0;
+
+  public prev() {
+    if(this.currentSentence > 0) {
+      this.currentSentence--;
+      console.log(this.currentSentence)
+    }
+  }
+
+  public next() {
+    if(this.currentSentence < this.story.length -1) {
+      this.currentSentence++;
+      console.log(this.currentSentence)
+    }
+  }
+
   ngOnInit(): void {
   }
 
