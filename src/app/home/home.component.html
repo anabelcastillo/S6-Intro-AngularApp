@@ -1,20 +1,23 @@
 <div class="container mt-5">
-    <div class="row">
-        <div class="col text-center">
-            <h2 class="text-center">Benvingut/da</h2>
+    <div class="row" *ngIf="!showScene">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="text-center">Benvingut/da</h2>
+            </div>
+        </div>
+        <div class="row my-5 d-flex justify-content-center">
+            <div class="col col-lg-6 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam esse accusamus distinctio cumque commodi temporibus unde itaque impedit, sint numquam autem magnam dolorem fuga reprehenderit vel enim amet pariatur?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary text-uppercase" (click)="showScene=true">començar</button>
+            </div> 
         </div>
     </div>
-    <div class="row my-5 d-flex justify-content-center">
-        <div class="col col-lg-6 text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam esse accusamus distinctio cumque commodi temporibus unde itaque impedit, sint numquam autem magnam dolorem fuga reprehenderit vel enim amet pariatur?</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-center">
-            <button type="button" class="btn btn-primary text-uppercase">començar</button>
-        </div> 
-    </div>
-    
-</div>
 
-<app-scene [story]="story"></app-scene>
+    <div *ngIf="showScene">
+        <app-scene [story]="story"></app-scene>
+    </div>
+</div>

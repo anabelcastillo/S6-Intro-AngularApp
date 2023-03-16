@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
     {text: "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ..."}
   ];
 
+  showScene: boolean = false;
+
   constructor() { };
 
   ngOnInit(): void {
