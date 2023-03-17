@@ -10,7 +10,8 @@ import { Story } from '../story';
 export class SceneComponent implements OnInit {
 
   @Input() public story: Story[];
-  sentenceStyle = "sentence";
+  sentenceStyle: string = "sentence";
+  imgStyle: string = "imgSentence"
 
   constructor() { 
     this.story = [];
@@ -21,14 +22,12 @@ export class SceneComponent implements OnInit {
   public prev() {
     if(this.currentSentence > 0) {
       this.currentSentence--;
-      console.log(this.currentSentence)
     }
   }
 
   public next() {
     if(this.currentSentence < this.story.length -1) {
       this.currentSentence++;
-      console.log(this.currentSentence)
     }
   }
 

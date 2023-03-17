@@ -1,4 +1,5 @@
 .sentence {
+    background-color: antiquewhite;
     border: 1px solid black;
     border-radius: 20px;
     text-align: center;
@@ -7,4 +8,11 @@
 
 .sentenceActive {
     background-color: lightpink;
+}
+
+.imgSentence {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
 }

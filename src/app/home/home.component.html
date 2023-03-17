@@ -1,13 +1,13 @@
-<div class="container mt-5">
-    <div class="row" *ngIf="!showScene">
+<div class="container">
+    <div class="row mt-5" *ngIf="!showScene">
         <div class="row">
             <div class="col text-center">
                 <h2 class="text-center">Benvingut/da</h2>
             </div>
         </div>
         <div class="row my-5 d-flex justify-content-center">
-            <div class="col col-lg-6 text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam esse accusamus distinctio cumque commodi temporibus unde itaque impedit, sint numquam autem magnam dolorem fuga reprehenderit vel enim amet pariatur?</p>
+            <div class="col col-md-10 col-lg-8 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam esse accusamus distinctio cumque commodi temporibus unde itaque impedit, sint numquam autem magnam dolorem fuga reprehenderit dolor sit amet consectetur adipisicing elit. Laboriosam esse accusamus distinctio cumque commodi temporibus unde itaque impedit, sint numquam autem magnam dolorem fuga reprehenderit vel enim amet pariatur?</p>
             </div>
         </div>
         <div class="row">
@@ -16,7 +16,8 @@
             </div> 
         </div>
     </div>
-
+</div>
+<div>
     <div *ngIf="showScene">
         <app-scene [story]="story"></app-scene>
     </div>
